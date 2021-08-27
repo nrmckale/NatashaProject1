@@ -22,11 +22,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
-- _: The Load Balancers protect applications from emerging threats and potential DDos attacks. They ensure that the application will be highly available as well as restricting traffic to the network. Load balancing works with the 3rd part of the CIA triad which is availability. The advantage of the Jump Box provisioner is simplification. When using the Jump Box you on have to use the .yml file to configure both Web Servers and the Elk Server.
+-  The Load Balancers protect applications from emerging threats and potential DDos attacks. They ensure that the application will be highly available as well as restricting traffic to the network. Load balancing works with the 3rd part of the CIA triad which is availability. The advantage of the Jump Box provisioner is simplification. When using the Jump Box you on have to use the .yml file to configure both Web Servers and the Elk Server.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- _: What does Filebeat watch for? Filebeat monitors the log files or locations that you specify, collects log events and forwards them either to Elasticsearch or Logstash for indexing.
-- _: What does Metricbeat record? Metricbeat follows closely to Filebeat but Metricbeat focuses on system and application/service metrics and statistics
+-  What does Filebeat watch for? Filebeat monitors the log files or locations that you specify, collects log events and forwards them either to Elasticsearch or Logstash for indexing.
+-  What does Metricbeat record? Metricbeat follows closely to Filebeat but Metricbeat focuses on system and application/service metrics and statistics
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -43,10 +43,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _: My Personal IP
+-  My Personal IP
 
 Machines within the network can only be accessed by SSH. 
-- _: I allowed the Jump Box provisioner (Jump Box private IP: 10.0.0.4/Jump Box Public IP:40.121.33.252) access to my ELK VM. My ELK VM's IP is 20.65.15.117
+-  I allowed the Jump Box provisioner (Jump Box private IP: 10.0.0.4/Jump Box Public IP:40.121.33.252) access to my ELK VM. My ELK VM's IP is 20.65.15.117
 
 A summary of the access policies in place can be found in the table below.
 
@@ -60,10 +60,10 @@ A summary of the access policies in place can be found in the table below.
 # Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _: then the machine becomes less vulnerable to error if it does not need to be replicated. When the YAML config playbook is ran automatically it allows IT administrators to focus on more valuable efforts during their day. Ansible allows you to more easily maintain and reuse each playbook on different VMs.
+-  then the machine becomes less vulnerable to error if it does not need to be replicated. When the YAML config playbook is ran automatically it allows IT administrators to focus on more valuable efforts during their day. Ansible allows you to more easily maintain and reuse each playbook on different VMs.
 
 The playbook implements the following tasks:
-- _: Installs docker on the machine along with setting the machine's max virtual memory
+-  Installs docker on the machine along with setting the machine's max virtual memory
 - ... Installs pip for Python 3 to install Python Packages
 - ... Installs docker python package using pip
 - ... Installs the elk docker container
